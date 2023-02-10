@@ -57,8 +57,6 @@ p{
 	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
 }
 
-
-
 .back{
 	position: absolute;
 	padding: 0 13px;
@@ -117,4 +115,45 @@ p{
 
 audio {
 	width: 100%;
+}
+
+.modal[open] {
+	height: 100vh;
+	width: auto;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* audio control */
+.audio-player {
+    width: auto;
+    height: auto;
+}
+
+.audio-icon {
+    width: 90%;
+    height: 90%;
+}
+
+.audio-player {
+    --player-button-width: 5rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.player-button {
+    background-color: transparent;
+    border: 0;
+    width: var(--player-button-width);
+    height: var(--player-button-width);
+    cursor: pointer;
+    padding: 0;
 }
