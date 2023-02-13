@@ -42,8 +42,8 @@ img{
 	color: #000;
 }
 p{
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 15px;
+	line-height: 1.7;
 }
 .front{
 	position: absolute;
@@ -85,15 +85,18 @@ p{
 	color: #fff;
 }
 #p1{
-	z-index: 4;
+	z-index: 5;
 }
 #p2{
-	z-index: 3;
+	z-index: 4;
 }
 #p3{
-	z-index: 2;
+	z-index: 3;
 }
 #p4{
+	z-index: 2;
+}
+#p5{
 	z-index: 1;
 }
 #c1:checked ~ .flip-book #p1{
@@ -112,6 +115,10 @@ p{
 	transform: rotateY(-180deg);
 	z-index: 4;
 }
+#c5:checked ~ .flip-book #p5{
+	transform: rotateY(-180deg);
+	z-index: 5;
+}
 
 audio {
 	width: 100%;
@@ -119,11 +126,36 @@ audio {
 
 .modal[open] {
 	height: 100vh;
-	width: auto;
-	border: none;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: auto;
+	border: none;
+	overflow: hidden;
+}
+
+.modal-wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.box {
+	position: absolute;
+	height: 25%;
+	width: 25%;
+	top: 0;
+	right: 0;
+	background-color: #000;
+}
+
+.box2 {
+	position: absolute;
+	height: 25%;
+	width: 25%;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
 }
 
 /* audio control */
@@ -156,4 +188,65 @@ audio {
     height: var(--player-button-width);
     cursor: pointer;
     padding: 0;
+}
+
+/* .open-btn {
+	border: none;
+	padding: 5px 10px;
+	width: 100%;
+	border-radius: 5px;
+} */
+
+.btn {
+	padding: 10px;
+	font-weight: 700;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	transition: all .5s ease;
+	cursor: pointer;
+	border: none;
+}
+
+.btn-open {
+	color: #e74c3c;
+	padding-right: 0;
+	background-color: #ffffff;
+	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+}
+
+.btn-open:hover { 
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);  
+}
+
+.btn-open:after {
+	content: "\f004";
+	color: #e74c3c;
+	font-family: FontAwesome;
+	display: inline-block;
+	position: relative;
+	right: -55px;
+	transition: all 0.2s ease;
+}
+
+.btn-open:hover:after {
+	margin: -5px 15px;
+	right: 0px;
+}
+
+span{
+	display: block;
+}
+
+.page-six {
+	font-size: 20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.small {
+	font-size: 13px;
 }

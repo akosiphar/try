@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="./style.css">
 	<title>Document</title>
 </head>
@@ -14,6 +16,7 @@
 		<input type="checkbox" id="c2">
 		<input type="checkbox" id="c3">
 		<input type="checkbox" id="c4">
+		<input type="checkbox" id="c5">
 		<div id="cover">
 			<!-- <img src="1.jpg"> -->
 		</div>
@@ -21,7 +24,7 @@
 	<!-- page 2 -->
 			<div class="flip" id="p1">
 				<div class="back">
-					<p class="p-two">Two</p>
+					<p class="p-two"></p>
 					<label class="back-btn" for="c1">Back</label>
 				</div>
 	<!-- page 1 -->
@@ -46,43 +49,62 @@
 			<div class="flip" id="p2">
 				<div class="back">
 					<h2>four</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis</p>
+					<p>A part of the song goes like this, "I may not be your type, to me it doesn't matter, I just want you to know"</p>
 					<label class="back-btn" for="c2">Back</label>
 				</div>
 	<!-- page 3 -->
 				<div class="front">
-					<p class="p-three">three</p>
+					<p class="p-three"></p>
 					<label class="next-btn" for="c2" onclick="typeWriter()">Next</label>
 				</div>
 			</div>
 	<!-- page 6 -->
 			<div class="flip" id="p3">
-				<div class="back">
-					<p>six</p>
+				<div class="back page-six">
+					<h2>
+						<span>I</span>
+						<span>Do</span>
+						<span>Like</span>
+						<span>You ❤</span>
+					</h2>
 					<label class="back-btn" for="c3">Back</label>
 				</div>
 	<!-- page 5 -->
 				<div class="front">
 					<h2>five</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis</p>
+					<p>Yes, I just want you to know that...</p>
 					<label class="next-btn" for="c3" onclick="typeWriter()">Next</label>
 				</div>
 			</div>
 	<!-- page 8 -->
 			<div class="flip" id="p4">
 				<div class="back">
+					<p>And we have known each other since childhood, and we get to know a lot in our teens, now I get to know you a lot more, and I want to know much more about you.</p>
 					<label class="back-btn" for="c4">Back</label>
-					<p>eight</p>
-					<button class="open-btn">Click Me</button>
-					<dialog class="modal">
-						Hello
-					</dialog>
 				</div>
 	<!-- page 7 -->
 				<div class="front">
-					<h2>seven</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis</p>
+					<p>I don't know when and how, but what I know is that I'm attracted to you by how you serve the Lord, by how you do all those things for him. 🤗</p>
 					<label class="next-btn" for="c4" onclick="typeWriter()">Next</label>
+				</div>
+			</div>
+	<!-- page 10 -->
+			<div class="flip" id="p5">
+				<div class="back">
+					<label class="back-btn" for="c5">Back</label>
+					<h2>Will you allow me to pursue you?</h2>
+					<button class="btn btn-open">Click Me</button>
+					<dialog class="modal">
+						<div class="box"></div>
+						<div class="model-wrapper">Hello</div>
+						<div class="box2"></div>
+					</dialog>
+					<p class="small">(If you do, can you please press that button?)</p>
+				</div>
+	<!-- page 9 -->
+				<div class="front">
+					<h2>and my question is...</h2>
+					<label class="next-btn" for="c5" onclick="typeWriter()">Next</label>
 				</div>
 			</div>
 		</div>

@@ -1,22 +1,26 @@
+alert("Please wear earphones 😊")
+
 let i = 0;
-let txt_two = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis'; /* The text */
-let txt_three = 'Hello Its me'; 
+let txt_two = 'I assume you have guessed it right away through the music that is playing and the date you are reading this... \n and yeah, what you are thinking right now is right hehe'; /* The text */
+let txt_three = "I mustered all my courage to send you this, because I'm afraid that if I don't do it right now, it may be a long time again to do this and might regret it later on, so here I am."; 
+let txt_four = "Hello Its me";
 let speed = 50; /* The speed/duration of the effect in milliseconds */
 let speedtwo = 100; /* The speed/duration of the effect in milliseconds */
 
-let openbtn = document.querySelector('.open-btn');
+let openbtn = document.querySelector('.btn-open');
 let modal = document.querySelector('dialog');
+let wrapper = document.querySelector('.modal-wrapper')
 
 function pagetwo() {
     if (i < txt_two.length) {
         document.querySelector(".p-two").innerHTML += txt_two.charAt(i);
-        setTimeout(pagetwo, 50);
     }
 
     if (i < txt_three.length) {
         document.querySelector(".p-three").innerHTML += txt_three.charAt(i);
     }
     i++;
+    setTimeout(pagetwo, 50)
 }
 
 
@@ -31,6 +35,7 @@ function pagethree() {
 
 openbtn.addEventListener('click', () => {
     modal.showModal();
+    modal.style.animation = 'fadeInUp 1s';
 })
 
 /* Audio Function */
