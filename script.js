@@ -2,8 +2,8 @@ alert("Please wear earphones 😊");
 yourName = prompt("State your name");
 
 let i = 0;
-let txt_two = 'I assume you have guessed it right away through the music that is playing and the date you are reading this... \n and yeah, what you are thinking right now is right hehe'; /* The text */
-let txt_three = "I mustered all my courage to send you this, because I'm afraid that if I don't do it right now, it may be a long time again to do this and might regret it later on, so here I am."; 
+let txt_two = 'I assume you have guessed it right away through the music that is playing and the date you are reading this... \n and yeah, what you are thinking right now is correct. I might caught you off-guard or you are expecting this. but anyways,'; /* The text */
+let txt_three = "I mustered all my courage to send you this, because I'm afraid that if I don't do it right now, it may be a long time again to do this and might regret it later on, so here I am praying and hoping to get a positive feedback hihi."; 
 let txt_four = "Hello Its me";
 let speed = 50; /* The speed/duration of the effect in milliseconds */
 let speedtwo = 100; /* The speed/duration of the effect in milliseconds */

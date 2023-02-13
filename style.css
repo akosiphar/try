@@ -264,6 +264,7 @@ span{
 .ss {
 	position: absolute;
 	bottom: 0;
+	font-size: 13px;
 }
 
 /* img {
