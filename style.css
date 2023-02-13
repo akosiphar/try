@@ -134,8 +134,8 @@ audio {
 	border: none;
 	overflow: hidden;
 	background-image: url(./heart.jpg);
-	background-position: center;
-	background-size: contain;
+	background-position: right -6em bottom -2em;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
