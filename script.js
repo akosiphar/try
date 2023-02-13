@@ -1,4 +1,5 @@
-alert("Please wear earphones 😊")
+alert("Please wear earphones 😊");
+yourName = prompt("State your name");
 
 let i = 0;
 let txt_two = 'I assume you have guessed it right away through the music that is playing and the date you are reading this... \n and yeah, what you are thinking right now is right hehe'; /* The text */
@@ -9,7 +10,11 @@ let speedtwo = 100; /* The speed/duration of the effect in milliseconds */
 
 let openbtn = document.querySelector('.btn-open');
 let modal = document.querySelector('dialog');
-let wrapper = document.querySelector('.modal-wrapper')
+let wrapper = document.querySelector('.modal-wrapper');
+let hello = document.querySelector('.hello');
+
+hello.innerHTML = `Hi, ${yourName}`;
+
 
 function pagetwo() {
     if (i < txt_two.length) {
@@ -22,6 +27,8 @@ function pagetwo() {
     i++;
     setTimeout(pagetwo, 50)
 }
+
+
 
 
 
@@ -56,27 +63,8 @@ playerButton.innerHTML = pauseIcon;
 audio.pause();
 playerButton.innerHTML = playIcon;
 }
+
+playerButton.currentTime = 300;
 }
 
 playerButton.addEventListener('click', toggleAudio);
-
-
-// if (i < txt_three.length) {
-//     document.querySelector(".p-three").innerHTML += txt_three.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-// }
-
-// if (i < txt.length) {
-//     document.querySelector(".p-one").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-// }
-
-// async function typeWriter() {
-
-//     await pagetwo();
-//     await pagethree();
-
-
-// }

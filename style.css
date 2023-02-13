@@ -133,11 +133,21 @@ audio {
 	width: auto;
 	border: none;
 	overflow: hidden;
+	background-image: url(./heart.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .modal-wrapper {
 	height: 100%;
 	width: 100%;
+	z-index: 2;
+}
+
+.bold {
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .box {
@@ -250,3 +260,13 @@ span{
 .small {
 	font-size: 13px;
 }
+
+.ss {
+	position: absolute;
+	bottom: 0;
+}
+
+/* img {
+	position: absolute;
+	top: 0;
+} */
