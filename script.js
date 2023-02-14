@@ -1,5 +1,4 @@
 alert("Please wear earphones 😊");
-yourName = prompt("State your name");
 
 let i = 0;
 let txt_two = 'I assume you have guessed it right away through the music that is playing and the date you are reading this... \n and yeah, what you are thinking right now is correct. I might caught you off-guard or you are expecting this. but anyways,'; /* The text */
@@ -12,8 +11,6 @@ let openbtn = document.querySelector('.btn-open');
 let modal = document.querySelector('dialog');
 let wrapper = document.querySelector('.modal-wrapper');
 let hello = document.querySelector('.hello');
-
-hello.innerHTML = `Hi, ${yourName}`;
 
 
 function pagetwo() {
